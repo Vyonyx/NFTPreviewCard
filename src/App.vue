@@ -11,6 +11,10 @@ import Card from './components/Card.vue'
 <style lang="scss" scoped>
 main {
   background: var(--main-bg);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 </style>
