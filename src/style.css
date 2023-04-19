@@ -1,5 +1,9 @@
 @import './reset.css';
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
 /* Primary */
 --soft-blue: hsl(215, 51%, 70%);
