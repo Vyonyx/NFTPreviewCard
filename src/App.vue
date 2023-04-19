@@ -7,4 +7,4 @@
   </main>
 </template>
 
-<style scoped></style>
+<style lang="scss"></style> scoped></style>
