@@ -4,7 +4,7 @@
 <template>
   <div class="card">
     <div class="artwork">
-      <img src="../assets/image-equilibrium.jpg" alt="nft artwork">
+      <img src="/image-equilibrium.jpg" alt="nft artwork">
     </div>
   </div>
 </template>
