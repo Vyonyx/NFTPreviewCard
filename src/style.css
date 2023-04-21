@@ -1,4 +1,5 @@
 @import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -14,4 +15,8 @@
 --card-bg: hsl(216, 50%, 16%);
 --line-color: hsl(215, 32%, 27%);
 --white: hsl(0, 0%, 100%);
+
+/* Font */
+font-family: 'Outfit', sans-serif;
+font-weight: 400;
 }
