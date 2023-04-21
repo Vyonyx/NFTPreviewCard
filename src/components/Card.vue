@@ -64,6 +64,34 @@ defineProps<Artwork>()
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+    }
+
+    &::before {
+      background: var(--cyan);
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: url(/icon-view.svg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 
   img {
     width: 100%;
