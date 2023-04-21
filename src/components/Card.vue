@@ -42,8 +42,13 @@ defineProps<Artwork>()
 
 <style lang="scss" scoped>
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
-  max-width: 320px;
+  max-width: 350px;
+  color: var(--white);
   background: var(--card-bg);
   aspect-ratio: 1/1.7;
   border-radius: 1rem;
@@ -62,6 +67,78 @@ defineProps<Artwork>()
 
   img {
     width: 100%;
+  }
+}
+
+.title {
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.description {
+  color: var(--soft-blue);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+
+  .currency,
+  .expiry {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .currency {
+    color: var(--cyan);
+    font-weight: 600;
+  }
+
+  .expiry {
+    color: var(--soft-blue);
+    font-weight: 300;
+  }
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background: var(--line-color);
+}
+
+.artist-details {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  span {
+    color: var(--soft-blue);
+    font-weight: 300;
+
+    &.name {
+      color: white;
+    }
   }
 }
 </style>
