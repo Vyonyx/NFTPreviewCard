@@ -1,10 +1,41 @@
 <script setup lang="ts">
+export interface Artwork {
+  id: number;
+  title: string;
+  description: string;
+  artistName: string;
+  artistProfile: string;
+  image: string;
+  cost: number;
+  currency: string;
+  daysLeft: number;
+}
+
+defineProps<Artwork>()
 </script>
 
 <template>
   <div class="card">
     <div class="artwork">
-      <img src="/image-equilibrium.jpg" alt="nft artwork">
+      <img :src="image" alt="nft artwork">
+    </div>
+
+    <h3 class="title">{{ title }} #{{ id }}</h3>
+    <p class="description">{{ description }}</p>
+
+    <div class="numbers">
+      <h6 class="currency"><img src="/icon-ethereum.svg" alt="currency symbol"> {{ cost }} {{ currency }}</h6>
+      <h6 class="expiry"><img src="/icon-clock.svg" alt="clock"> {{ daysLeft }} {{ daysLeft > 1 ? "days" : "day" }} left
+      </h6>
+    </div>
+
+    <div class="line" />
+
+    <div class="artist-details">
+      <div class="profile-photo">
+        <img :src="artistProfile" alt="artistName">
+      </div>
+      <p><span>Creation of</span> <span class="name">{{ artistName }}</span></p>
     </div>
   </div>
 </template>
