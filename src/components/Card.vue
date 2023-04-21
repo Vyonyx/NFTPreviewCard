@@ -75,6 +75,11 @@ defineProps<Artwork>()
   font-weight: 600;
   font-size: 1.5rem;
   letter-spacing: 1px;
+
+  &:hover {
+    color: var(--cyan);
+    cursor: pointer;
+  }
 }
 
 .description {
@@ -138,6 +143,11 @@ defineProps<Artwork>()
 
     &.name {
       color: white;
+
+      &:hover {
+        color: var(--cyan);
+        cursor: pointer;
+      }
     }
   }
 }
