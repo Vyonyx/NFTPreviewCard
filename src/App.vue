@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Card from './components/Card.vue'
 import type { Artwork } from './components/Card.vue';
+import artworkImage from '/image-equilibrium.jpg'
+import artwork from '/image-avatar.png'
 
 const artworks: Artwork[] = [
   {
@@ -8,8 +10,8 @@ const artworks: Artwork[] = [
     title: "Equilibrium",
     description: "Our Equilibrium collection promotes balance and calm.",
     artistName: "Jules Wyvern",
-    artistProfile: "/image-avatar.png",
-    image: "/image-equilibrium.jpg",
+    artistProfile: artwork,
+    image: artworkImage,
     cost: 0.041,
     currency: "ETH",
     daysLeft: 3,
