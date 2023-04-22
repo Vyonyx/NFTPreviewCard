@@ -42,6 +42,7 @@ defineProps<Artwork>()
 
 <style lang="scss" scoped>
 .card {
+  --shadow-color: rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +53,7 @@ defineProps<Artwork>()
   background: var(--card-bg);
   aspect-ratio: 1/1.7;
   border-radius: 1rem;
-  box-shadow: 0px 0px 20px 10px hsla(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px 20px var(--shadow-color);
   padding: 1.5rem;
 }
 
