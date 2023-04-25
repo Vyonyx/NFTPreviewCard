@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/Vyonyx/FTPreviewCard-feMentors-Vue)
+- Solution URL: [GitHub](https://github.com/Vyonyx/NFTPreviewCard-feMentors-Vue)
 - Live Site URL: [GitHub Pages](https://vyonyx.github.io/NFTPreviewCard-feMentors-Vue/)
 
 ## My process
